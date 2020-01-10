@@ -2,7 +2,7 @@ export class Movie {
     
     constructor(
         private title: string,
-        private date: Date,
+        private date: string,
         private length: string,
         private synopsis: string,
         private link: string,
@@ -17,11 +17,11 @@ export class Movie {
             return this.title
         }
 
-        public getDate(): Date{
+        public getDate(): string{
             return this.date
         }
 
-        public getLenth(): string{
+        public getLength(): string{
             return this.length
         }
 

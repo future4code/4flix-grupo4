@@ -25,7 +25,7 @@ export class MovieCreateUseCase {
 export interface MovieCreateInput {
     movie: {
         title: string,
-        date: Date,
+        date: string,
         length: string,
         synopsis: string,
         link: string,
