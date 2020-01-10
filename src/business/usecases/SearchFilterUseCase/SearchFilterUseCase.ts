@@ -12,9 +12,8 @@ export class SearchFilterUseCase {
   async execute(SearchInput: SearchInput): Promise<SearchOutput> {
     const result: Array<Movie | Serie> = await this.searchGateway.search(SearchInput.query, SearchInput.minLength, SearchInput.maxLength)
 
-    return {
-      result
-    }
+    return {result}
+
   }
 }
 
