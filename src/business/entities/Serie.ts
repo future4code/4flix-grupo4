@@ -1,3 +1,5 @@
+import { Episode } from "./Episode";
+
 export class Serie {
     
     constructor(
@@ -13,10 +15,3 @@ export class Serie {
     
 }
 
-export type Episode = {
-    title: string,
-    length: string,
-    link: string,
-    picture: string,
-    synopsis: string
-}
